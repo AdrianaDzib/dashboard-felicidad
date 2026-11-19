@@ -476,7 +476,7 @@ export default function App() {
 
   // Carga automática desde public/world_happiness_combined.csv
   useEffect(() => {
-    fetch('/world_happiness_combined.csv')
+    fetch('/public/world_happiness_combined.csv')
       .then((res) => {
         if (!res.ok) throw new Error('Archivo CSV no encontrado en /public');
         return res.text();
